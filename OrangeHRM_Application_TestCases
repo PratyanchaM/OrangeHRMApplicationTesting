@@ -1,0 +1,19 @@
+Test Case ID	Test Scenario 	Test Case Title	Pre-requisites	Test Steps	Test Data	Expected Result (ER)	Actual Result	Priority	Severity	Result
+TC_001	TS001	Verify login with valid credentials	User account exists	"1. Open the login page.
+2. Enter valid credentials.
+3. Click Login."	"Username: admin
+Password: admin123"	User is logged in and redirected to the dashboard.	User is logged in and redirected to the dashboard.	High	Critical	PASS
+TC_002	TS002	Verify error message for invalid credentials	Application is running	"1. Open the login page.
+2. Enter invalid credentials.
+3. Click Login."	"Username: invalidUser
+Password: invalidPwd"	Error message: "Invalid credentials."	Error message: "Invalid credentials."	High	Major	PASS
+TC_003	TS003	Verify applying for leave with valid details	Employee has valid leave balance	"1. Login.
+2. Navigate to Leave module.
+3. Fill in valid details and submit."	"Start Date: 2024-12-01
+End Date: 2024-12-05"	Leave request is submitted successfully.	Leave request is submitted successfully.	High	Major	PASS
+TC_004	TS004	Verify applying leave without mandatory fields	Employee account exists	" Login.
+2. Leave mandatory fields blank.
+3. Submit leave request."	NONE	Error message: "Please fill required fields.	Error message: "Please fill required fields.	Medium 	Major	PASS
+TC_005	TS005	Verify cancellation of an applied leave	Employee has pending leave	"1. Login.
+2. Go to Leave history.
+3. Cancel applied leave"	Leave Request ID: 12345	Leave request is canceled successfully.	Leave request is canceled successfully.	Medium 	Major	PASS
