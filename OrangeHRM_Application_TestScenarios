@@ -1,0 +1,11 @@
+Test Scenario ID	Module	Test Scenario Description
+TS001	Login	Verify login with valid credentials.
+TS002	Login	Verify error message is displayed for invalid credentials.
+TS003	Leave Management	Verify applying for leave with valid details.
+TS004	Leave Management	Verify applying leave without mandatory fields.
+TS005	Leave Management	Verify the cancellation of leave requests.
+TS006	PIM	Verify adding a new employee record.
+TS007	PIM	Verify editing existing employee details.
+TS008	Recruitment	Verify posting a new job vacancy.
+TS009	Recruitment	Verify shortlisting candidates for a job vacancy.
+TS010	Dashboard	Verify that the dashboard widgets display accurate data.
